@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eeeae0">
+  <meta name="robots" content="noindex,nofollow"> <!-- Staging-only: remove for final public portfolio -->
+  <meta name="description" content="Brandon Ho is a Computer Science student in Adelaide, Australia. Explore selected work in C++, full-stack web development and software systems.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Brandon Ho — Software, Systems & Security">
+  <meta property="og:description" content="Selected software projects and experience from an Adelaide-based Computer Science student.">
+  <title>Brandon Ho — Software, Systems & Security</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="site-container header-grid">
+      <a class="wordmark" href="#top" aria-label="Brandon Ho — top of page">BH<span aria-hidden="true">/</span></a>
+      <div class="header-discipline">COMPUTER SCIENCE<br>ADELAIDE, AUSTRALIA</div>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero site-container" aria-labelledby="hero-title">
+      <div class="hero-topline">
+        <span>PORTFOLIO / 2026</span>
+        <span class="hero-status"><span aria-hidden="true" class="status-square"></span> OPEN TO OPPORTUNITIES</span>
+      </div>
+      <h1 id="hero-title" class="hero-title"><span>BRANDON</span><span>HO<span class="orange-period">.</span></span></h1>
+      <div class="hero-base twelve-grid">
+        <div class="hero-stamp" aria-hidden="true"><span>B</span><span>/</span><span>H</span></div>
+        <div class="hero-intro">
+          <p class="hero-statement">Software, systems<br>and security.</p>
+          <p>I’m a Computer Science student at Adelaide University. I like working out how things function, getting into the details and building practical software from what I learn.</p>
+          <a class="arrow-link" href="#work">See selected work <span aria-hidden="true">↘</span></a>
+        </div>
+        <div class="hero-margin-note">BCompSc<br>EXPECTED 2027</div>
+      </div>
+    </section>
+
+    <section id="work" class="work-section" aria-labelledby="work-title">
+      <div class="site-container">
+        <div class="section-head work-head twelve-grid">
+          <div class="section-number">01 <span>/ 03</span></div>
+          <h2 id="work-title">Selected<br><em>work.</em></h2>
+          <p>Three projects that reflect how I approach problems across web development, algorithms and object-oriented programming.</p>
+        </div>
+
+        <article class="project project-one twelve-grid" aria-labelledby="p1-title">
+          <div class="project-index">01 <span>/ WEB</span></div>
+          <div class="project-story">
+            <h3 id="p1-title">Pinboard<br>Embedder <span class="subtle-name">/ Savvit</span></h3>
+            <p>A university group application for organising and embedding content into user-specific pinboards. I contributed to authentication using Passport.js and bcrypt, MySQL-backed functionality and module testing using GitHub feature branches.</p>
+            <div class="project-stack" aria-label="Technologies">JAVASCRIPT <span>·</span> EXPRESS.JS <span>·</span> MYSQL <span>·</span> PASSPORT.JS</div>
+            <a class="project-link" href="https://github.com/BrandonHo419/Savvit-Web-Based-Development" target="_blank" rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="project-art pinboard-art" role="img" aria-label="Original editorial diagram illustrating account authentication and pinboards. Not an application screenshot.">
+            <div class="art-heading"><span>AUTHENTICATE</span><span>ORGANISE</span><span>RENDER</span></div>
+            <div class="pinboard-diagram" aria-hidden="true">
+              <div class="diagram-identity">USER<br><span>01</span></div>
+              <div class="diagram-line"></div>
+              <div class="diagram-board"><span>PIN / 01</span><span>PIN / 02</span><span>PIN / 03</span><span>PIN / 04</span></div>
+            </div>
+            <div class="art-foot"><span>PINBOARD / CONTENT SYSTEM</span><span>01—03</span></div>
+          </div>
+        </article>
+
+        <article class="project project-two twelve-grid" aria-labelledby="p2-title">
+          <div class="project-index">02 <span>/ ALGORITHMS</span></div>
+          <div class="project-art search-art" role="img" aria-label="Original typographic diagram showing search, indexing and ranking concepts. Not an application screenshot.">
+            <div class="art-heading"><span>INPUT / QUERY</span><span>OUTPUT / RANKED</span></div>
+            <div class="search-diagram" aria-hidden="true"><div class="query-prompt"><small>&gt; QUERY</small><strong>algorithms<span>_</span></strong></div><div class="search-pipeline"><span>01&nbsp; INDEX</span><b>→</b><span>02&nbsp; MATCH</span><b>→</b><span>03&nbsp; RANK</span></div><div class="score-lines"><div><span>DOC_01</span><i></i><small>DEMO</small></div><div><span>DOC_02</span><i></i><small>DEMO</small></div><div><span>DOC_03</span><i></i><small>DEMO</small></div></div></div>
+            <div class="art-foot"><span>ILLUSTRATIVE / NOT REAL OUTPUT</span><span>02—03</span></div>
+          </div>
+          <div class="project-story">
+            <h3 id="p2-title">Mini Search<br>Engine</h3>
+            <p>A C++ command-line tool that indexes text files and returns ranked results. I used Trie data structures and TF-IDF, and implemented query features including prefix search, stemming and Boolean operators.</p>
+            <div class="project-stack" aria-label="Technologies">C++ <span>·</span> TRIES <span>·</span> TF-IDF <span>·</span> CLI</div>
+            <a class="project-link" href="https://github.com/BrandonHo419/mini-search-engine" target="_blank" rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="project project-three twelve-grid" aria-labelledby="p3-title">
+          <div class="project-index">03 <span>/ C++ & OOP</span></div>
+          <div class="project-story">
+            <h3 id="p3-title">Farming Grid<br>Game</h3>
+            <p>A grid-based simulation built using C++ and SFML. It gave me practical experience in object-oriented design, event handling, manual memory management and managing game states.</p>
+            <div class="project-stack" aria-label="Technologies">C++ <span>·</span> SFML <span>·</span> OOP <span>·</span> EVENTS</div>
+            <a class="project-link" href="https://github.com/BrandonHo419/GridFarmGame" target="_blank" rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="project-art grid-art" role="img" aria-label="Original editorial illustration of a farming game grid. Not an in-game screenshot.">
+            <div class="art-heading"><span>STATE / WORLD GRID</span><span>SIMULATION</span></div>
+            <div class="farm-grid" aria-hidden="true">
+              <span class="soil">✳</span><span></span><span class="seed">✳</span><span></span><span>·</span><span class="soil">✳</span><span></span><span class="seed">✳</span>
+              <span></span><span class="seed">✳</span><span></span><span class="soil">✳</span><span class="seed">✳</span><span></span><span>·</span><span></span>
+              <span class="soil">✳</span><span></span><span class="seed">✳</span><span></span><span></span><span class="soil">✳</span><span></span><span class="seed">✳</span>
+            </div>
+            <div class="art-foot"><span>EVENTS / OBJECTS / STATE</span><span>03—03</span></div>
+          </div>
+        </article>
+        <p class="art-disclaimer">Illustrations are original conceptual diagrams, not screenshots of deployed applications. Savvit is a group project; the contributions described above are my own.</p>
+      </div>
+    </section>
+
+    <section class="about-section site-container" id="about" aria-labelledby="about-title">
+      <div class="section-head about-head twelve-grid">
+        <div class="section-number">02 <span>/ 03</span></div>
+        <h2 id="about-title">About.</h2>
+        <div class="about-side">CURIOUS ABOUT<br>HOW THINGS WORK</div>
+      </div>
+      <div class="about-body twelve-grid">
+        <div class="about-copy">
+          <p>My studies have taken me through systems programming, data structures, web and database computing, and cybersecurity fundamentals. I enjoy the part of development where a problem is still unclear and you have to work through it methodically.</p>
+          <p>Outside university, working in reception, retail and hospitality has taught me to communicate clearly, stay organised and adapt when priorities change. I would like to bring both sides of that experience into a technical team.</p>
+        </div>
+        <div class="skills-list" aria-label="Technical skills">
+          <div class="skill-row"><span>01 / CORE SKILLS</span><p>C++ · JavaScript · HTML/CSS · SQL/MySQL · Git/GitHub</p></div>
+          <div class="skill-row"><span>02 / FAMILIAR TOOLS</span><p>Python · C · Node.js · Express.js · Docker · Linux · REST APIs · Wireshark</p></div>
+          <div class="skill-row"><span>03 / INTERESTS</span><p>Software engineering · Systems programming · Cybersecurity</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience-section site-container" id="experience" aria-labelledby="experience-title">
+      <div class="section-head experience-head twelve-grid"><div class="section-number">03 <span>/ 03</span></div><h2 id="experience-title">Experience.</h2><p>Professional experience beyond university, and what I have learnt from it.</p></div>
+      <div class="experience-rows">
+        <div class="experience-entry twelve-grid"><span class="experience-date">NOV 2025 — PRESENT</span><div><h3>Sales Assistant</h3><p>Skechers</p></div><p>Customer service, processing inventory and keeping stock organised in a retail environment.</p></div>
+        <div class="experience-entry twelve-grid"><span class="experience-date">JAN 2023 — FEB 2026</span><div><h3>Receptionist & Junior Assistant Developer</h3><p>Real Estate Display Centre</p></div><p>Prototyped a conceptual SQL and JavaScript database for administrative workflows alongside client-facing office responsibilities.</p></div>
+        <div class="experience-entry twelve-grid"><span class="experience-date">APR 2025 — FEB 2026</span><div><h3>Function Steward & Bartender</h3><p>O’Brien Group</p></div><p>Supported corporate functions and worked with a team to meet changing guest-service requirements.</p></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="site-container contact-grid twelve-grid">
+        <div class="contact-index">NEXT / CONTACT</div>
+        <h2 id="contact-title">Let’s<br>talk<span>.</span></h2>
+        <div class="contact-detail">
+          <p>I am interested in graduate, junior and internship opportunities where I can contribute, keep learning and work alongside people with practical experience.</p>
+          <a class="contact-email" href="mailto:brandon.ho0419@gmail.com">brandon.ho0419@gmail.com <span aria-hidden="true">↗</span></a>
+          <div class="contact-social"><a href="https://www.linkedin.com/in/brandon-ho-b01b4023a/" target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a><a href="https://github.com/BrandonHo419" target="_blank" rel="noopener noreferrer">GITHUB ↗</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="site-container footer-grid"><a href="#top">BH/</a><span>BRANDON HO · ADELAIDE, AUSTRALIA</span><span>© <span id="year">2026</span> · BUILT WITH HTML, CSS & JAVASCRIPT</span></div></footer>
+</body>
+</html>
