@@ -1,49 +1,68 @@
-# Brandon Ho — Swiss Industrial portfolio (STAGING)
+# Brandon Ho — portfolio preview
 
-**Status:** Prepared for staging deployment; not published as part of this package.
+A personal portfolio for graduate, junior and internship applications, with a balanced selection of web development, algorithms and software systems work.
 
-## Design direction
+## Current status
 
-The user approved a ~70% Swiss Technical Editorial / ~30% Industrial Brutalism hybrid. The design uses a 12-column grid, generous white space, oversized asymmetrical `BRANDON HO.` headline, warm off-white, charcoal and restrained industrial orange, plus Archivo and IBM Plex Mono typefaces.
+The preview is published at https://brandonho419.github.io/portfolio-preview/.
+This address is temporary. The permanent address and any custom domain will be decided separately.
+The page retains `noindex,nofollow` while it is a preview. This discourages search indexing; it does not restrict public access.
 
-No glassmorphism, gradients, generic nested cards, templated three-column cards, or generic marketing slogans. Project diagrams are **original conceptual illustrations**, not screenshots, real test output, or measured performance.
+Expected graduation: 2027. Achievements and certifications will be added when suitable verified content is available.
 
-## Content and privacy
+## Run locally
 
-- Professional public name: Brandon Ho.
-- Public contact email was explicitly approved.
-- Pinboard Embedder / Savvit is a university group project; the claimed individual contributions were expressly confirmed by the candidate.
-- Formal Cybersecurity major is **not** claimed because the university record has not yet been verified.
-- No private legal name, phone number, home address, referee details, transcript, GPA, or grades are included.
-- `noindex,nofollow` is enabled only to discourage search engine indexing during staging. **It is not access protection.**
+No installation, build step, API key or backend is required.
 
-## Edit and preview locally
+Open `index.html` in a browser, use VS Code Live Server, or run:
 
-You can edit `index.html`, `styles.css`, and `script.js` in VS Code. Open `index.html` directly in a browser, or use VS Code Live Server. Internet access is needed to fetch Google Fonts; system fallback fonts will be used without it. No JavaScript build, npm install, API keys or backend are required.
+```sh
+python3 -m http.server 8000
+```
 
-## Publish to a separate *unadvertised* staging URL
+Then open http://localhost:8000. Google Fonts requires internet access; system fonts provide a fallback.
+JavaScript only updates the footer year. Core content and navigation work without it.
 
-Target: `https://brandonho419.github.io/portfolio-preview/` (proposed; not verified live).
+## Structure
 
-1. Sign in to GitHub as `BrandonHo419` and create a **public** repository named `portfolio-preview`. Do not create the final account-level `BrandonHo419.github.io` repository for staging.
-2. Extract the ZIP and upload the **files inside the folder** to the new repository's root: `index.html`, `styles.css`, `script.js`, `favicon.svg`, `.nojekyll` and optionally `README.md`. Do **not** upload only the ZIP file.
-3. Commit the files on the `main` branch.
-4. Open **Settings → Pages → Build and deployment → Source: Deploy from a branch**, choose **main** and **/(root)**, then save.
-5. When deployment reports success, visit `https://brandonho419.github.io/portfolio-preview/` and test links on a computer and phone.
-6. Make edits in the repository or via VS Code, and commit them to `main`; GitHub Pages republishes changes. Keep this staging site out of applications until the final release is separately approved.
+- `index.html`: introduction, three selected projects, skills, experience and contact links.
+- `styles.css`: responsive editorial design, keyboard focus and reduced-motion support.
+- `script.js`: footer year.
+- `favicon.svg`: BH mark.
+- `.nojekyll`: static GitHub Pages publishing.
 
-Note: The GitHub connection available in this conversation can read and edit existing repositories but does not currently expose repository creation or Pages configuration. No live staging repository or URL has been created or activated by this package. GitHub Pages is public to anyone with the address. `noindex` is only a request to search engines.
+## Maintain project evidence
 
-Official GitHub guide: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+Each project separates its purpose from its contribution or engineering focus.
+The `.project-actions` container holds the available evidence links. Currently these link to source code.
 
-## Final production release (separate approval required)
+When real material is ready:
 
-Before launching the final professional portfolio, review all content again, add real screenshots if desired, remove the staging `noindex` meta tag, decide the permanent GitHub Pages repository and domain, and obtain explicit approval to deploy.
+1. Add an appropriately sized screenshot or recording with descriptive alternative text or a caption.
+2. Replace the project's conceptual illustration where appropriate, preserving its responsive layout.
+3. Add a descriptive screenshot, walkthrough or demo link inside that project's `.project-actions` container.
+4. Test the actual destination before publishing. Do not add empty links or imply a demo exists before it does.
 
-## Files
+Illustrations currently on the site are original conceptual diagrams, not screenshots, test results or performance measurements.
+Savvit is a university group project; its description distinguishes Brandon's individual contributions.
+Do not add unverified accomplishments, certifications or performance claims.
 
-- `index.html` — semantic content, three selected projects and links
-- `styles.css` — 12-column Swiss Industrial design and responsive layout
-- `script.js` — footer year only; site works without it
-- `favicon.svg` — custom BH mark
-- `.nojekyll` — disables Jekyll interpretation for GitHub Pages
+## Verify changes
+
+There is no automated test suite or checked-in CI workflow.
+
+- Inspect the introduction and all projects at desktop, tablet and narrow mobile widths.
+- Confirm there is no horizontal scrolling and project text and evidence links remain readable.
+- Use Tab to check the skip link, navigation, evidence links and contact links.
+- Check section navigation, all external destinations and the email link.
+- Disable JavaScript and verify the content remains usable.
+- Check reduced-motion preferences and offline font fallbacks.
+
+## Publishing and planned work
+
+The site uses GitHub Pages. Pushing approved changes to the configured publishing branch updates the public preview.
+Do not change Pages configuration or add deployment workflows as part of content edits.
+
+Next: separate project data from markup for simpler maintenance. A later approved stage may refresh selected GitHub metadata daily.
+Project selection, personal contributions and achievement descriptions will remain curated.
+Automatic metadata updates, screenshots, demos, certifications and a résumé download are not yet implemented.
