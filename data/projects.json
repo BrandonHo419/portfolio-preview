@@ -1,0 +1,74 @@
+{
+  "savvit": {
+    "name": "Savvit",
+    "title_lines": [
+      "Pinboard",
+      "Embedder"
+    ],
+    "subtitle": "/ Savvit",
+    "summary": "A university group application for organising and embedding content into user-specific pinboards.",
+    "contribution_label": "My contribution",
+    "contribution": "Authentication using Passport.js and bcrypt, MySQL-backed functionality and module testing using GitHub feature branches.",
+    "technologies": [
+      "JAVASCRIPT",
+      "EXPRESS.JS",
+      "MYSQL",
+      "PASSPORT.JS"
+    ],
+    "evidence": [
+      {
+        "label": "Source code",
+        "url": "https://github.com/BrandonHo419/Savvit-Web-Based-Development",
+        "accessible_label": "View Savvit source code on GitHub"
+      }
+    ]
+  },
+  "search": {
+    "name": "Mini Search Engine",
+    "title_lines": [
+      "Mini Search",
+      "Engine"
+    ],
+    "subtitle": "",
+    "summary": "A C++ command-line tool that indexes text files and returns ranked results.",
+    "contribution_label": "Implementation",
+    "contribution": "Trie data structures and TF-IDF ranking, with query features including prefix search, stemming and Boolean operators.",
+    "technologies": [
+      "C++",
+      "TRIES",
+      "TF-IDF",
+      "CLI"
+    ],
+    "evidence": [
+      {
+        "label": "Source code",
+        "url": "https://github.com/BrandonHo419/ProjectSearchEngine",
+        "accessible_label": "View Mini Search Engine source code on GitHub"
+      }
+    ]
+  },
+  "farm": {
+    "name": "Farming Grid Game",
+    "title_lines": [
+      "Farming Grid",
+      "Game"
+    ],
+    "subtitle": "",
+    "summary": "A grid-based simulation built using C++ and SFML.",
+    "contribution_label": "Engineering focus",
+    "contribution": "Object-oriented design, event handling, manual memory management and game state management.",
+    "technologies": [
+      "C++",
+      "SFML",
+      "OOP",
+      "EVENTS"
+    ],
+    "evidence": [
+      {
+        "label": "Source code",
+        "url": "https://github.com/BrandonHo419/GridFarmGame",
+        "accessible_label": "View Farming Grid Game source code on GitHub"
+      }
+    ]
+  }
+}
